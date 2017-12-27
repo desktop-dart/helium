@@ -28,6 +28,7 @@ void appInit() {
     if(app != nullptr) {
         return;
     }
+    QCoreApplication::setAttribute(Qt::AA_UseOpenGLES);
     app = new QApplication(argc, nullptr);
 }
 

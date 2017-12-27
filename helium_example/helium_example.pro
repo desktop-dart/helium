@@ -30,8 +30,8 @@ HEADERS +=
 
 FORMS +=
 
-win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../build-helium-Desktop-Debug/release/ -lhelium
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../build-helium-Desktop-Debug/debug/ -lhelium
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../build-helium-Desktop_Qt_5_9_0_MSVC2015_64bit-Debug/release/ -lhelium
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../build-helium-Desktop_Qt_5_9_0_MSVC2015_64bit-Debug/debug/ -lhelium
 else:unix: LIBS += -L$$PWD/../build-helium-Desktop-Debug/ -lhelium
 
 INCLUDEPATH += $$PWD/../helium
